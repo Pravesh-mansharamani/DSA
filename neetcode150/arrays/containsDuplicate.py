@@ -1,5 +1,5 @@
-// This is brute force. Time complexity : O(n^2)
 class Solution:
+    "This is brute force. Time complexity : O(n^2)"
     def containsDuplicate(self, nums: List[int]) -> bool:
         n = len(nums)
         for i in range(n-1):
@@ -10,7 +10,7 @@ class Solution:
 
 
 
-// This version uses a set. Time complexity : O(n)
+"This version uses a set. Time complexity : O(n)"
     def containsDuplicate1(self, nums: List[int]) -> bool:
         hasBeenSeen = set()
         for i in nums:
@@ -20,7 +20,7 @@ class Solution:
         return False
 
 
-// This version uses Hash Table and its just a bit more effiecient then the one above. Time complexity : O(n)
+"This version uses Hash Table and its just a bit more effiecient then the one above. Time complexity : O(n)"
     def containsDuplicate2(self, nums: List[int]) -> bool:
         hasBeenSeen = {}
 
